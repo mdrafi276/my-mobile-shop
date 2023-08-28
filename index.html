@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone Api</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl">Hunting Phone</h1>
+
+    </header>
+    <main class="container mx-auto mt-8">
+
+        <div class="bg-gray-100 p-4 m-4">
+            <input id="search-field" type="text" placeholder="serch..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="hendleSearch()" class="btn btn-accent">Serach</button>
+            <!-- enother search field -->
+            <!-- <input id="search-field2" type="text" placeholder="search here"
+                class="input input-bordered input-secondary w-full max-w-xs" />
+            <button onclick="handleSearch2()" class="btn btn-active btn-primary">search</button> -->
+
+        </div>
+        <!-- sutch restlt -->
+        <section>
+            <div id="lodding-spinner" class="text-center  text-white my-40 hidden ">
+                <span class="loading loading-spinner loading-lg"></span>
+
+            </div>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+            </div>
+            <!-- show all phones onclick button  -->
+            <div id="show -all-container" class=" text-center hidden my-8">
+                <button onclick="handleShowAll()" class="btn btn-accent ">
+                    Show All
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
